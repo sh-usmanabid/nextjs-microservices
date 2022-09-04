@@ -1,18 +1,16 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Microfrontends Demo</title>
-        <meta name="description" content="Demo for Microfrontends using Module Federation" />
+        <title>NextJS Micro-Services</title>
+        <meta name="description" content="NextJS Micro-Services" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        Hello! This content is hosted locally.
+      <main>
+          <p>This is Home Page</p>
       </main>
     </div>
   )

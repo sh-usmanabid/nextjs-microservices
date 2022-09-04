@@ -1,11 +1,10 @@
 import Link from 'next/link'
-import styles from '../styles/Nav.module.css'
 
 const Nav = () => (
-  <div className={styles.nav}>
-    <Link href="/mario">Load Mario</Link>
+  <div>
+    <Link href="/microService1">Micro-Service 1</Link>
     <Link href="/">Home</Link>
-    <Link href="/luigi">Load Luigi</Link>
+    <Link href="/microService2">Micro-Service 2</Link>
   </div>
 )
 

@@ -1,18 +1,16 @@
 import Head from 'next/head'
-import Mario from '../components/mario'
-import styles from '../styles/Home.module.css'
-
+import MicroService1 from '../components/microService1'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Microfrontend Demo App 1</title>
-        <meta name="description" content="This is an app" />
+        <title>Micro-Service App 1</title>
+        <meta name="description" content="This is Micro-Service App 1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Mario />
+      <MicroService1 />
     </div>
   )
 }
