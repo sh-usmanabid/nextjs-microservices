@@ -1,0 +1,22 @@
+{
+  "name": "nextjs-microservices",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "concurrently \"cd app1\" \"npm run dev\" \"cd app2\" \"npm run dev\" \"cd app3\" \"npm run dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh-usmanabid/nextjs-microservices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sh-usmanabid/nextjs-microservices/issues"
+  },
+  "homepage": "https://github.com/sh-usmanabid/nextjs-microservices#readme",
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}
