@@ -13,7 +13,11 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-const theme = createTheme();
+const theme = createTheme({
+    palette: {
+        mode: 'dark',
+    },
+});
 
 export default function SignUp() {
     const handleSubmit = (event) => {
@@ -104,7 +108,7 @@ export default function SignUp() {
                         </Button>
                         <Grid container justifyContent="flex-end">
                             <Grid item>
-                                <Link href="app3/pages/signUp#" variant="body2">
+                                <Link href="signIn" variant="body2">
                                     Already have an account? Sign in
                                 </Link>
                             </Grid>

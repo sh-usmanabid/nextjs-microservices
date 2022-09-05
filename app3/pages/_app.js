@@ -1,18 +1,30 @@
 import Header from '../components/header'
-import '../styles/globals.css'
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import Head from "next/head";
+import * as React from "react";
 
-const sections = [
-    { title: 'Home', url: '/' },
-    { title: 'Todo List', url: 'microService1' },
-    { title: 'FAQs', url: 'microService2' },
-];
+const darkTheme = createTheme({
+    palette: {
+        mode: 'dark',
+    }
+});
 
 function MyApp({ Component, pageProps }) {
-  return ( 
-    <>
-        <Header title="NextJS Micro-Services" sections={sections} />
-      <Component {...pageProps} />
-    </>
+  return (
+      <div>
+          <Head>
+              <title>NextJS Microservices</title>
+              <meta name="description" content="NextJS Microservices" />
+              <link rel="icon" href="/favicon.ico" />
+          </Head>
+
+          <ThemeProvider theme={darkTheme}>
+              <CssBaseline />
+              <Header />
+              <Component {...pageProps} />
+          </ThemeProvider>
+      </div>
   )
 }
 

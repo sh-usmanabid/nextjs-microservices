@@ -1,10 +1,10 @@
 import dynamic from 'next/dynamic'
 
-const MicroService2 = dynamic(
+const Faqs = dynamic(
   () => import("app2/microService2"),
   { ssr: false }
 )
 
-const App2 = () => (<MicroService2 />)
+const App2 = () => (<Faqs />)
 
 export default App2
