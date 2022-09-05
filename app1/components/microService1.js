@@ -2,31 +2,20 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import { Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 
 export default function ImgMediaCard() {
     return (
-        <Card sx={{ maxWidth: 345 }}>
-            <CardMedia
-                component="img"
-                alt="green iguana"
-                height="140"
-                image="/static/images/cards/contemplative-reptile.jpg"
-            />
+        <Card>
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
-                </Typography>
+                <FormGroup>
+                    <FormControlLabel control={<Checkbox />} label="Implement Micro-Services using NextJS" />
+                </FormGroup>
             </CardContent>
             <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+                <Button variant="contained" size="small" color="error">Delete</Button>
+                <Button variant="contained" size="small" color="success">Save</Button>
             </CardActions>
         </Card>
     );
